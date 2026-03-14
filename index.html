@@ -241,6 +241,46 @@
     .btt{position:fixed;bottom:2rem;right:2rem;width:44px;height:44px;background:var(--surface);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all .3s;z-index:400;opacity:0;transform:translateY(10px);font-family:var(--mono);font-size:.9rem;color:var(--gold);text-decoration:none;}
     .btt.visible{opacity:1;transform:translateY(0);}
     .btt:hover{background:var(--gold);color:var(--black);border-color:var(--gold);}
+    /* AI AGENT CHATBOT */
+    .ai-fab{position:fixed;bottom:2rem;right:6rem;width:56px;height:56px;background:linear-gradient(135deg,var(--gold),var(--gold-light));border:none;border-radius:50%;cursor:pointer;z-index:600;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 24px rgba(201,169,110,.35);transition:transform .3s,box-shadow .3s;}
+    .ai-fab:hover{transform:scale(1.1);box-shadow:0 6px 32px rgba(201,169,110,.5);}
+    .ai-fab svg{width:26px;height:26px;fill:var(--black);}
+    .ai-fab .ai-fab-close{display:none;}
+    .ai-fab.open .ai-fab-icon{display:none;}
+    .ai-fab.open .ai-fab-close{display:block;}
+    .ai-fab-pulse{position:absolute;inset:-4px;border-radius:50%;border:2px solid var(--gold);opacity:0;animation:ai-pulse 2.5s infinite;}
+    @keyframes ai-pulse{0%{opacity:.6;transform:scale(1);}100%{opacity:0;transform:scale(1.5);}}
+    .ai-chat{position:fixed;bottom:6.5rem;right:2rem;width:380px;max-height:520px;background:var(--deep);border:1px solid rgba(201,169,110,.25);box-shadow:0 16px 64px rgba(0,0,0,.6);z-index:599;display:flex;flex-direction:column;opacity:0;transform:translateY(20px) scale(.95);pointer-events:none;transition:opacity .3s,transform .3s;}
+    .ai-chat.open{opacity:1;transform:translateY(0) scale(1);pointer-events:auto;}
+    .ai-chat-head{padding:1.2rem 1.5rem;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:.8rem;background:var(--surface);}
+    .ai-chat-avatar{width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--gold-light));display:flex;align-items:center;justify-content:center;font-size:.9rem;flex-shrink:0;}
+    .ai-chat-info{flex:1;}
+    .ai-chat-name{font-family:var(--sans);font-size:.85rem;font-weight:600;color:var(--white);}
+    .ai-chat-status{font-family:var(--mono);font-size:.58rem;letter-spacing:.1em;text-transform:uppercase;color:#4ade80;display:flex;align-items:center;gap:.4rem;}
+    .ai-chat-status::before{content:'';width:5px;height:5px;background:#4ade80;border-radius:50%;animation:pulse 2s infinite;}
+    .ai-chat-msgs{flex:1;overflow-y:auto;padding:1.2rem;display:flex;flex-direction:column;gap:.8rem;min-height:280px;max-height:340px;scrollbar-width:thin;scrollbar-color:rgba(201,169,110,.3) transparent;}
+    .ai-chat-msgs::-webkit-scrollbar{width:4px;}
+    .ai-chat-msgs::-webkit-scrollbar-thumb{background:rgba(201,169,110,.3);border-radius:2px;}
+    .ai-msg{max-width:85%;padding:.75rem 1rem;font-size:.84rem;line-height:1.6;animation:fadeUp .3s ease;}
+    .ai-msg.bot{align-self:flex-start;background:var(--surface);border:1px solid var(--border);border-radius:0 12px 12px 12px;color:var(--white);}
+    .ai-msg.user{align-self:flex-end;background:linear-gradient(135deg,rgba(201,169,110,.2),rgba(201,169,110,.1));border:1px solid rgba(201,169,110,.3);border-radius:12px 0 12px 12px;color:var(--white);}
+    .ai-msg.bot strong{color:var(--gold-light);}
+    .ai-typing{align-self:flex-start;padding:.75rem 1rem;background:var(--surface);border:1px solid var(--border);border-radius:0 12px 12px 12px;display:flex;gap:4px;align-items:center;}
+    .ai-typing span{width:6px;height:6px;background:var(--gold);border-radius:50%;animation:ai-dot 1.4s infinite;}
+    .ai-typing span:nth-child(2){animation-delay:.2s;}
+    .ai-typing span:nth-child(3){animation-delay:.4s;}
+    @keyframes ai-dot{0%,60%,100%{opacity:.3;transform:scale(.8);}30%{opacity:1;transform:scale(1);}}
+    .ai-chat-input{display:flex;gap:.6rem;padding:.8rem 1rem;border-top:1px solid var(--border);background:var(--surface);}
+    .ai-chat-input input{flex:1;background:var(--deep);border:1px solid var(--border);color:var(--white);font-family:var(--sans);font-size:.84rem;padding:.6rem .9rem;outline:none;transition:border-color .3s;}
+    .ai-chat-input input:focus{border-color:rgba(201,169,110,.5);}
+    .ai-chat-input input::placeholder{color:rgba(240,237,232,.2);}
+    .ai-chat-input button{background:var(--gold);border:none;color:var(--black);width:36px;height:36px;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:background .3s;flex-shrink:0;}
+    .ai-chat-input button:hover{background:var(--gold-light);}
+    .ai-chat-input button svg{width:16px;height:16px;fill:var(--black);}
+    .ai-suggestions{display:flex;flex-wrap:wrap;gap:.4rem;padding:0 1.2rem .8rem;}
+    .ai-sug{font-family:var(--mono);font-size:.6rem;letter-spacing:.06em;color:var(--gold);border:1px solid rgba(201,169,110,.25);padding:.3rem .7rem;cursor:pointer;transition:all .3s;background:transparent;}
+    .ai-sug:hover{background:rgba(201,169,110,.12);border-color:rgba(201,169,110,.5);}
+    @media(max-width:480px){.ai-chat{right:.5rem;left:.5rem;width:auto;bottom:5.5rem;max-height:70vh;}.ai-fab{right:1.5rem;bottom:1.5rem;}}
     /* ANIMATIONS */
     @keyframes fadeUp{from{opacity:0;transform:translateY(22px);}to{opacity:1;transform:translateY(0);}}
     @keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
@@ -610,6 +650,28 @@
   </div>
 </section>
 
+<!-- AI AGENT -->
+<button class="ai-fab" id="aiFab" onclick="toggleAiChat()">
+  <div class="ai-fab-pulse"></div>
+  <svg class="ai-fab-icon" viewBox="0 0 24 24"><path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1.07A7 7 0 0 1 14 23h-4a7 7 0 0 1-6.93-4H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73A2 2 0 0 1 12 2zm-2 9a5 5 0 0 0-5 5v1a5 5 0 0 0 5 5h4a5 5 0 0 0 5-5v-1a5 5 0 0 0-5-5h-4zm-1 5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3zm6 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3z"/></svg>
+  <svg class="ai-fab-close" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+</button>
+<div class="ai-chat" id="aiChat">
+  <div class="ai-chat-head">
+    <div class="ai-chat-avatar">&#129302;</div>
+    <div class="ai-chat-info">
+      <div class="ai-chat-name" id="aiName">Agent IA de Cyrille</div>
+      <div class="ai-chat-status" id="aiStatus">En ligne</div>
+    </div>
+  </div>
+  <div class="ai-chat-msgs" id="aiMsgs"></div>
+  <div class="ai-suggestions" id="aiSugs"></div>
+  <div class="ai-chat-input">
+    <input type="text" id="aiInput" autocomplete="off">
+    <button onclick="sendAiMsg()"><svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg></button>
+  </div>
+</div>
+
 <footer>
   <div class="footer-logo">Cyrille <span>Nenin</span></div>
   <div class="footer-copy" id="footerCopy">&#169; 2026 &#8212; Business Analyst &#183; Data &amp; Risk Management &#183; FinTech &#183; Kanata, Canada</div>
@@ -864,6 +926,278 @@ function handleSubmit(e) {
     setTimeout(function() { btn.textContent = origText; btn.style.background = ''; }, 4000);
   });
 }
+
+// ============================================================
+// AI AGENT - Moteur conversationnel intelligent
+// ============================================================
+var aiOpen = false;
+var aiInited = false;
+
+var AI = {
+  fr: {
+    name: 'Agent IA de Cyrille',
+    status: 'En ligne',
+    placeholder: 'Posez une question sur Cyrille...',
+    welcome: 'Bonjour ! Je suis l\u2019assistant IA de <strong>Cyrille Nenin</strong>. Posez-moi vos questions sur son profil, ses comp\u00e9tences, son parcours ou sa disponibilit\u00e9.',
+    suggestions: ['Qui est Cyrille ?', 'Comp\u00e9tences', 'Exp\u00e9rience', 'Disponibilit\u00e9', 'Contact'],
+    fallback: 'Je ne suis pas s\u00fbr de comprendre cette question. Essayez de me demander des informations sur le parcours, les comp\u00e9tences, la formation ou la disponibilit\u00e9 de Cyrille.',
+    kb: [
+      {
+        keys: ['qui', 'pr\u00e9sente', 'profil', 'about', 'cyrille', 'bonjour', 'salut', 'hello', 'hi', 'hey'],
+        answer: '<strong>Cyrille Nenin</strong> est un Business Analyst sp\u00e9cialis\u00e9 en <strong>Data & Risk Management</strong> dans la banque d\u2019investissement et la FinTech. Fort de 4+ ans d\u2019exp\u00e9rience au sein de grandes institutions comme Cr\u00e9dit Agricole CIB, Soci\u00e9t\u00e9 G\u00e9n\u00e9rale et BPCE, il a fond\u00e9 <strong>Allcaps</strong>, une initiative FinTech alliant IA et optimisation de portefeuilles.'
+      },
+      {
+        keys: ['comp\u00e9tence', 'skill', 'expertise', 'sait', 'capable', 'ma\u00eetrise', 'technique', 'techno', 'outil', 'python', 'sql', 'power bi', 'vba', 'pandas'],
+        answer: 'Cyrille ma\u00eetrise un ensemble complet de comp\u00e9tences :\n\n\u2022 <strong>Finance & R\u00e9glementation</strong> : B\u00e2le III/IV, RWA, risque cr\u00e9dit (LGD, PD, EAD), IFRS\n\u2022 <strong>Data & Analytics</strong> : Python, SQL, Power BI, Pandas, NumPy, EasyMorph\n\u2022 <strong>Machine Learning</strong> : Scikit-learn, mod\u00e8les pr\u00e9dictifs, scoring cr\u00e9dit\n\u2022 <strong>Gestion de projet</strong> : Agile/Scrum, V-Model, JIRA\n\u2022 <strong>March\u00e9s</strong> : Bloomberg Terminal, FX, P&L tracking'
+      },
+      {
+        keys: ['exp\u00e9rience', 'parcours', 'carri\u00e8re', 'travail', 'poste', 'employeur', 'entreprise', 'banque', 'cr\u00e9dit agricole', 'soci\u00e9t\u00e9 g\u00e9n\u00e9rale', 'bpce', 'caceis', 'tradition'],
+        answer: 'Le parcours de Cyrille comprend :\n\n\u2022 <strong>Soci\u00e9t\u00e9 G\u00e9n\u00e9rale PB</strong> (Sep 2025 \u2013 Pr\u00e9sent) : BA Core Banking & Data\n\u2022 <strong>Allcaps</strong> (Jan 2025 \u2013 Pr\u00e9sent) : Fondateur, FinTech & Data Advisory\n\u2022 <strong>BPCE SA</strong> (Avr\u2013Juil 2025) : BA Financial Data Automation\n\u2022 <strong>Cr\u00e9dit Agricole CIB</strong> (Jan 2023 \u2013 Mar 2025) : BA Credit Risk & Basel III/IV\n\u2022 <strong>Caceis</strong> (2022) : BA Regulatory Compliance\n\u2022 <strong>Cie Financi\u00e8re Tradition</strong> (2021\u20132022) : Assistant Trader FX'
+      },
+      {
+        keys: ['formation', '\u00e9tude', '\u00e9cole', 'dipl\u00f4me', 'master', 'universit\u00e9', 'esgf', 'bachelor'],
+        answer: 'Formation acad\u00e9mique de Cyrille :\n\n\u2022 <strong>MSc Financial Engineering</strong> \u2013 ESGF Paris (2021\u20132022)\n\u2022 <strong>Master Risk Management</strong> \u2013 Abidjan University Institute (2018\u20132020)\n\u2022 <strong>Bachelor Economics</strong> \u2013 Catholic University of West Africa (2015\u20132018)'
+      },
+      {
+        keys: ['certif', 'pmp', 'safe', 'amf', 'bloomberg', 'bmc'],
+        answer: 'Certifications de Cyrille :\n\n\u2022 <strong>PMP</strong> \u2013 Project Management Professional (examen pr\u00e9vu mai 2026)\n\u2022 <strong>SAFe\u00ae 6.0</strong> \u2013 Product Owner / Product Manager \u2713\n\u2022 <strong>NSF 313p</strong> \u2013 Ing\u00e9nierie Financi\u00e8re (Niveau 7) \u2713\n\u2022 <strong>AMF</strong> \u2013 March\u00e9s Financiers \u2713\n\u2022 <strong>Bloomberg BMC</strong> \u2713'
+      },
+      {
+        keys: ['disponib', 'recrut', 'embauche', 'hiring', 'cdi', 'freelance', 'contractor', 'quand', 'imm\u00e9diat'],
+        answer: 'Cyrille est <strong>disponible imm\u00e9diatement</strong> \u00e0 <strong>Kanata, Ontario, Canada</strong>.\n\nIl est ouvert aux opportunit\u00e9s suivantes :\n\u2022 CDI \u2013 Poste permanent\n\u2022 Freelance / Contractor\n\u2022 Collaboration FinTech\n\u2022 Partenariat\n\nContactez-le directement via la section <strong>Contact</strong> ci-dessous !'
+      },
+      {
+        keys: ['contact', 'email', 'mail', 't\u00e9l\u00e9phone', 'appel', 'joindre', 'num\u00e9ro'],
+        answer: 'Vous pouvez contacter Cyrille de deux fa\u00e7ons :\n\n\u2022 <strong>Email</strong> : cyrilleneninbi@gmail.com\n\u2022 <strong>T\u00e9l\u00e9phone</strong> : +1 613 854 9304\n\nOu utilisez le formulaire de contact directement sur cette page !'
+      },
+      {
+        keys: ['allcaps', 'fintech', 'startup', 'projet', 'ia', 'portefeuille', 'portfolio', 'fond\u00e9'],
+        answer: '<strong>Allcaps</strong> est l\u2019initiative FinTech fond\u00e9e par Cyrille. Elle combine :\n\n\u2022 <strong>IA & Machine Learning</strong> pour l\u2019optimisation de portefeuilles\n\u2022 <strong>Dashboards temps r\u00e9el</strong> de suivi de performance de fonds\n\u2022 <strong>Mod\u00e8les pr\u00e9dictifs</strong> d\u2019allocation d\u2019actifs et scoring cr\u00e9dit\n\u2022 <strong>Reporting automatis\u00e9</strong> pour investisseurs retail'
+      },
+      {
+        keys: ['langue', 'anglais', 'fran\u00e7ais', 'language'],
+        answer: 'Cyrille est <strong>bilingue</strong> :\n\n\u2022 <strong>Fran\u00e7ais</strong> : Langue maternelle\n\u2022 <strong>Anglais</strong> : Niveau B2 (CEFR)'
+      },
+      {
+        keys: ['localisation', 'o\u00f9', 'ville', 'pays', 'canada', 'kanata', 'ottawa', 'ontario', 'paris'],
+        answer: 'Cyrille r\u00e9side actuellement \u00e0 <strong>Kanata, Ontario, Canada</strong> (r\u00e9gion d\u2019Ottawa). Il a pr\u00e9c\u00e9demment travaill\u00e9 \u00e0 <strong>Paris, France</strong> au sein de grandes institutions bancaires.'
+      },
+      {
+        keys: ['b\u00e2le', 'basel', 'rwa', 'risque', 'r\u00e9glementaire', 'credit risk', 'lgd', 'pd', 'ead', 'conformit\u00e9'],
+        answer: 'Cyrille est expert en <strong>risque r\u00e9glementaire bancaire</strong> :\n\n\u2022 <strong>B\u00e2le III/IV</strong> : Calibration, impl\u00e9mentation et reporting\n\u2022 <strong>Risque cr\u00e9dit</strong> : Mod\u00e9lisation LGD, PD, EAD\n\u2022 <strong>RWA</strong> : Optimisation et monitoring via Power BI\n\u2022 <strong>1M+</strong> d\u2019enregistrements r\u00e9glementaires analys\u00e9s chez Cr\u00e9dit Agricole CIB'
+      },
+      {
+        keys: ['merci', 'super', 'g\u00e9nial', 'parfait', 'top', 'excellent', 'bravo'],
+        answer: 'Merci ! N\u2019h\u00e9sitez pas si vous avez d\u2019autres questions sur Cyrille. Vous pouvez aussi le contacter directement via le formulaire ou par email \u00e0 cyrilleneninbi@gmail.com \ud83d\ude0a'
+      }
+    ]
+  },
+  en: {
+    name: 'Cyrille\u2019s AI Agent',
+    status: 'Online',
+    placeholder: 'Ask a question about Cyrille...',
+    welcome: 'Hello! I\u2019m <strong>Cyrille Nenin</strong>\u2019s AI assistant. Ask me anything about his profile, skills, experience or availability.',
+    suggestions: ['Who is Cyrille?', 'Skills', 'Experience', 'Availability', 'Contact'],
+    fallback: 'I\u2019m not sure I understand that question. Try asking about Cyrille\u2019s experience, skills, education or availability.',
+    kb: [
+      {
+        keys: ['who', 'about', 'profile', 'cyrille', 'hello', 'hi', 'hey', 'present'],
+        answer: '<strong>Cyrille Nenin</strong> is a Business Analyst specialized in <strong>Data & Risk Management</strong> in investment banking and FinTech. With 4+ years at top institutions like Cr\u00e9dit Agricole CIB, Soci\u00e9t\u00e9 G\u00e9n\u00e9rale and BPCE, he founded <strong>Allcaps</strong>, a FinTech initiative combining AI and portfolio optimization.'
+      },
+      {
+        keys: ['skill', 'expertise', 'capable', 'master', 'technical', 'tech', 'tool', 'python', 'sql', 'power bi', 'vba', 'pandas'],
+        answer: 'Cyrille has a comprehensive skill set:\n\n\u2022 <strong>Finance & Regulation</strong>: Basel III/IV, RWA, credit risk (LGD, PD, EAD), IFRS\n\u2022 <strong>Data & Analytics</strong>: Python, SQL, Power BI, Pandas, NumPy, EasyMorph\n\u2022 <strong>Machine Learning</strong>: Scikit-learn, predictive models, credit scoring\n\u2022 <strong>Project Management</strong>: Agile/Scrum, V-Model, JIRA\n\u2022 <strong>Markets</strong>: Bloomberg Terminal, FX, P&L tracking'
+      },
+      {
+        keys: ['experience', 'career', 'work', 'position', 'employer', 'company', 'bank', 'credit agricole', 'societe generale', 'bpce', 'caceis', 'tradition'],
+        answer: 'Cyrille\u2019s career includes:\n\n\u2022 <strong>Soci\u00e9t\u00e9 G\u00e9n\u00e9rale PB</strong> (Sep 2025 \u2013 Present): BA Core Banking & Data\n\u2022 <strong>Allcaps</strong> (Jan 2025 \u2013 Present): Founder, FinTech & Data Advisory\n\u2022 <strong>BPCE SA</strong> (Apr\u2013Jul 2025): BA Financial Data Automation\n\u2022 <strong>Cr\u00e9dit Agricole CIB</strong> (Jan 2023 \u2013 Mar 2025): BA Credit Risk & Basel III/IV\n\u2022 <strong>Caceis</strong> (2022): BA Regulatory Compliance\n\u2022 <strong>Cie Financi\u00e8re Tradition</strong> (2021\u20132022): FX Desk Assistant Trader'
+      },
+      {
+        keys: ['education', 'study', 'school', 'degree', 'master', 'university', 'esgf', 'bachelor'],
+        answer: 'Cyrille\u2019s education:\n\n\u2022 <strong>MSc Financial Engineering</strong> \u2013 ESGF Paris (2021\u20132022)\n\u2022 <strong>Master Risk Management</strong> \u2013 Abidjan University Institute (2018\u20132020)\n\u2022 <strong>Bachelor Economics</strong> \u2013 Catholic University of West Africa (2015\u20132018)'
+      },
+      {
+        keys: ['certif', 'pmp', 'safe', 'amf', 'bloomberg', 'bmc'],
+        answer: 'Cyrille\u2019s certifications:\n\n\u2022 <strong>PMP</strong> \u2013 Project Management Professional (exam scheduled May 2026)\n\u2022 <strong>SAFe\u00ae 6.0</strong> \u2013 Product Owner / Product Manager \u2713\n\u2022 <strong>NSF 313p</strong> \u2013 Financial Engineering (Level 7) \u2713\n\u2022 <strong>AMF</strong> \u2013 Financial Markets \u2713\n\u2022 <strong>Bloomberg BMC</strong> \u2713'
+      },
+      {
+        keys: ['availab', 'hire', 'hiring', 'recruit', 'full-time', 'freelance', 'contractor', 'when', 'immediate'],
+        answer: 'Cyrille is <strong>available immediately</strong> in <strong>Kanata, Ontario, Canada</strong>.\n\nHe is open to:\n\u2022 Full-time positions\n\u2022 Freelance / Contractor roles\n\u2022 FinTech collaborations\n\u2022 Partnerships\n\nReach out via the <strong>Contact</strong> section below!'
+      },
+      {
+        keys: ['contact', 'email', 'mail', 'phone', 'call', 'reach', 'number'],
+        answer: 'You can reach Cyrille in two ways:\n\n\u2022 <strong>Email</strong>: cyrilleneninbi@gmail.com\n\u2022 <strong>Phone</strong>: +1 613 854 9304\n\nOr use the contact form directly on this page!'
+      },
+      {
+        keys: ['allcaps', 'fintech', 'startup', 'project', 'ai', 'portfolio', 'found'],
+        answer: '<strong>Allcaps</strong> is Cyrille\u2019s FinTech initiative combining:\n\n\u2022 <strong>AI & Machine Learning</strong> for portfolio optimization\n\u2022 <strong>Real-time dashboards</strong> for fund performance tracking\n\u2022 <strong>Predictive models</strong> for asset allocation and credit scoring\n\u2022 <strong>Automated reporting</strong> for retail investors'
+      },
+      {
+        keys: ['language', 'english', 'french', 'speak'],
+        answer: 'Cyrille is <strong>bilingual</strong>:\n\n\u2022 <strong>French</strong>: Native\n\u2022 <strong>English</strong>: B2 level (CEFR)'
+      },
+      {
+        keys: ['location', 'where', 'city', 'country', 'canada', 'kanata', 'ottawa', 'ontario', 'paris'],
+        answer: 'Cyrille currently lives in <strong>Kanata, Ontario, Canada</strong> (Ottawa region). He previously worked in <strong>Paris, France</strong> at major banking institutions.'
+      },
+      {
+        keys: ['basel', 'rwa', 'risk', 'regulatory', 'credit risk', 'lgd', 'pd', 'ead', 'compliance'],
+        answer: 'Cyrille is an expert in <strong>banking regulatory risk</strong>:\n\n\u2022 <strong>Basel III/IV</strong>: Calibration, implementation and reporting\n\u2022 <strong>Credit risk</strong>: LGD, PD, EAD modeling\n\u2022 <strong>RWA</strong>: Optimization and monitoring via Power BI\n\u2022 <strong>1M+</strong> regulatory records analyzed at Cr\u00e9dit Agricole CIB'
+      },
+      {
+        keys: ['thanks', 'great', 'awesome', 'perfect', 'excellent', 'good'],
+        answer: 'Thank you! Feel free to ask if you have more questions about Cyrille. You can also contact him directly via the form or at cyrilleneninbi@gmail.com \ud83d\ude0a'
+      }
+    ]
+  }
+};
+
+function toggleAiChat() {
+  aiOpen = !aiOpen;
+  var fab = g('aiFab');
+  var chat = g('aiChat');
+  if (fab) fab.classList.toggle('open', aiOpen);
+  if (chat) chat.classList.toggle('open', aiOpen);
+  if (aiOpen && !aiInited) {
+    aiInited = true;
+    initAiChat();
+  }
+  if (aiOpen) {
+    var inp = g('aiInput');
+    if (inp) setTimeout(function() { inp.focus(); }, 350);
+  }
+}
+
+function initAiChat() {
+  var l = currentLang;
+  var ai = AI[l];
+  var nameEl = g('aiName');
+  var statusEl = g('aiStatus');
+  var inp = g('aiInput');
+  if (nameEl) nameEl.textContent = ai.name;
+  if (statusEl) statusEl.textContent = ai.status;
+  if (inp) inp.placeholder = ai.placeholder;
+  addBotMsg(ai.welcome);
+  renderSuggestions();
+}
+
+function renderSuggestions() {
+  var sugsEl = g('aiSugs');
+  if (!sugsEl) return;
+  var ai = AI[currentLang];
+  sugsEl.innerHTML = '';
+  ai.suggestions.forEach(function(s) {
+    var btn = document.createElement('button');
+    btn.className = 'ai-sug';
+    btn.textContent = s;
+    btn.onclick = function() { sendAiQuery(s); };
+    sugsEl.appendChild(btn);
+  });
+}
+
+function addBotMsg(html) {
+  var msgs = g('aiMsgs');
+  if (!msgs) return;
+  var div = document.createElement('div');
+  div.className = 'ai-msg bot';
+  div.innerHTML = html.replace(/\n/g, '<br>');
+  msgs.appendChild(div);
+  msgs.scrollTop = msgs.scrollHeight;
+}
+
+function addUserMsg(text) {
+  var msgs = g('aiMsgs');
+  if (!msgs) return;
+  var div = document.createElement('div');
+  div.className = 'ai-msg user';
+  div.textContent = text;
+  msgs.appendChild(div);
+  msgs.scrollTop = msgs.scrollHeight;
+}
+
+function showTyping() {
+  var msgs = g('aiMsgs');
+  if (!msgs) return;
+  var div = document.createElement('div');
+  div.className = 'ai-typing';
+  div.id = 'aiTyping';
+  div.innerHTML = '<span></span><span></span><span></span>';
+  msgs.appendChild(div);
+  msgs.scrollTop = msgs.scrollHeight;
+}
+
+function hideTyping() {
+  var t = g('aiTyping');
+  if (t) t.remove();
+}
+
+function findAnswer(query) {
+  var ai = AI[currentLang];
+  var q = query.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  var bestMatch = null;
+  var bestScore = 0;
+  ai.kb.forEach(function(entry) {
+    var score = 0;
+    entry.keys.forEach(function(key) {
+      var k = key.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+      if (q.indexOf(k) !== -1) {
+        score += k.length;
+      }
+    });
+    if (score > bestScore) {
+      bestScore = score;
+      bestMatch = entry.answer;
+    }
+  });
+  return bestMatch || ai.fallback;
+}
+
+function sendAiQuery(text) {
+  if (!text || !text.trim()) return;
+  addUserMsg(text.trim());
+  var sugsEl = g('aiSugs');
+  if (sugsEl) sugsEl.innerHTML = '';
+  showTyping();
+  var delay = 600 + Math.random() * 800;
+  setTimeout(function() {
+    hideTyping();
+    var answer = findAnswer(text);
+    addBotMsg(answer);
+    renderSuggestions();
+  }, delay);
+}
+
+function sendAiMsg() {
+  var inp = g('aiInput');
+  if (!inp) return;
+  var text = inp.value;
+  inp.value = '';
+  sendAiQuery(text);
+}
+
+// Handle Enter key
+var aiInputEl = g('aiInput');
+if (aiInputEl) {
+  aiInputEl.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') { e.preventDefault(); sendAiMsg(); }
+  });
+}
+
+// Sync language with agent
+var origToggleLang = toggleLang;
+toggleLang = function() {
+  origToggleLang();
+  if (aiInited) {
+    var ai = AI[currentLang];
+    var nameEl = g('aiName');
+    var statusEl = g('aiStatus');
+    var inp = g('aiInput');
+    if (nameEl) nameEl.textContent = ai.name;
+    if (statusEl) statusEl.textContent = ai.status;
+    if (inp) inp.placeholder = ai.placeholder;
+    renderSuggestions();
+  }
+};
 </script>
 </body>
 </html>
