@@ -1,0 +1,1798 @@
+<!DOCTYPE html>
+<html lang="fr" prefix="og: https://ogp.me/ns#">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>CRAFT — Outils SaaS sur-mesure propulsés par l'IA | Automatisez votre métier</title>
+    <meta name="description" content="CRAFT conçoit des outils sur-mesure propulsés par l'IA pour les dirigeants dont l'activité ne rentre dans aucun logiciel existant. Audit découverte gratuit.">
+    <meta name="keywords" content="outil sur-mesure, SaaS, intelligence artificielle, automatisation, PME, logiciel métier, IA, outil IA, digitalisation, CRAFT">
+    <meta name="author" content="Cyrille Nenin — CRAFT">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <link rel="canonical" href="https://craft-ia.fr">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://craft-ia.fr">
+    <meta property="og:title" content="CRAFT — Outils SaaS sur-mesure propulsés par l'IA">
+    <meta property="og:description" content="Votre activité mérite son propre outil. CRAFT conçoit des solutions sur-mesure propulsées par l'IA pour les dirigeants dont le métier ne rentre dans aucun logiciel.">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="CRAFT">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CRAFT — Outils SaaS sur-mesure propulsés par l'IA">
+    <meta name="twitter:description" content="Votre activité mérite son propre outil. Audit découverte gratuit — Réponse sous 24h.">
+
+    <!-- Structured Data / Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "CRAFT",
+        "description": "Conception d'outils SaaS sur-mesure propulsés par l'intelligence artificielle pour les dirigeants de PME.",
+        "url": "https://craft-ia.fr",
+        "email": "cyrilleneninbi@gmail.com",
+        "founder": {
+            "@type": "Person",
+            "name": "Cyrille Nenin",
+            "url": "https://www.linkedin.com/in/cyrille-nenin-safe%C2%AE-popm-3370891a1"
+        },
+        "areaServed": {
+            "@type": "Country",
+            "name": "France"
+        },
+        "serviceType": ["Développement logiciel sur-mesure", "Intelligence artificielle", "Automatisation des processus métier", "Outils SaaS"],
+        "priceRange": "Sur devis",
+        "knowsAbout": ["Intelligence artificielle", "SaaS", "No-code", "Automatisation", "PME"],
+        "sameAs": [
+            "https://www.linkedin.com/in/cyrille-nenin-safe%C2%AE-popm-3370891a1"
+        ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Qu'est-ce qu'un outil sur-mesure propulsé par l'IA ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "C'est un logiciel conçu spécifiquement pour votre activité, qui intègre de l'intelligence artificielle pour automatiser vos tâches répétitives, analyser vos données et vous faire gagner du temps."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Combien coûte un projet CRAFT ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Chaque projet est unique, donc le prix dépend de la complexité et de l'étendue de votre besoin. L'audit découverte est gratuit et sans engagement."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Combien de temps faut-il pour avoir mon outil ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "En général, entre 2 et 8 semaines selon la complexité du projet. Vous avez une visibilité totale sur l'avancement à chaque étape."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Ai-je besoin de compétences techniques ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Absolument pas. Votre outil est livré clé en main avec une formation complète. Il est conçu pour être aussi simple à utiliser qu'une application mobile."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Que se passe-t-il après la livraison ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nous ne disparaissons pas après la livraison. Vous bénéficiez d'un support continu, de mises à jour régulières et d'optimisations en fonction de l'évolution de votre activité."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Performance: preconnect + preload critical fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Favicon placeholder -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+
+    <!-- Theme color for mobile browsers -->
+    <meta name="theme-color" content="#0a0a0b">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <style>
+        :root {
+            --bg-primary: #0a0a0b;
+            --bg-secondary: #111113;
+            --bg-card: #18181b;
+            --bg-card-hover: #1f1f23;
+            --text-primary: #fafafa;
+            --text-secondary: #a1a1aa;
+            --text-muted: #71717a;
+            --accent: #6d28d9;
+            --accent-light: #8b5cf6;
+            --accent-glow: rgba(139, 92, 246, 0.15);
+            --accent-gradient: linear-gradient(135deg, #6d28d9 0%, #a855f7 50%, #6d28d9 100%);
+            --border: #27272a;
+            --border-light: #3f3f46;
+            --success: #22c55e;
+            --radius: 16px;
+            --radius-sm: 10px;
+            --radius-xs: 6px;
+            --shadow-xl: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            --max-width: 1200px;
+            --transition: cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        /* ═══════════════ UTILITY ═══════════════ */
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .section {
+            padding: 120px 0;
+            position: relative;
+        }
+
+        .section-label {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--accent-light);
+            margin-bottom: 16px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-label::before {
+            content: '';
+            width: 24px;
+            height: 2px;
+            background: var(--accent-light);
+            border-radius: 2px;
+        }
+
+        .section-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(32px, 5vw, 48px);
+            font-weight: 700;
+            line-height: 1.15;
+            letter-spacing: -1.5px;
+            margin-bottom: 20px;
+        }
+
+        .section-subtitle {
+            font-size: 18px;
+            color: var(--text-secondary);
+            max-width: 600px;
+            line-height: 1.7;
+        }
+
+        .gradient-text {
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* ═══════════════ ANIMATIONS ═══════════════ */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.8s var(--transition), transform 0.8s var(--transition);
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .reveal-delay-1 { transition-delay: 0.1s; }
+        .reveal-delay-2 { transition-delay: 0.2s; }
+        .reveal-delay-3 { transition-delay: 0.3s; }
+        .reveal-delay-4 { transition-delay: 0.4s; }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-12px); }
+        }
+
+        @keyframes pulse-glow {
+            0%, 100% { box-shadow: 0 0 20px rgba(139, 92, 246, 0.2); }
+            50% { box-shadow: 0 0 40px rgba(139, 92, 246, 0.4); }
+        }
+
+        @keyframes gradient-shift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* ═══════════════ NAVBAR ═══════════════ */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 16px 0;
+            transition: all 0.4s var(--transition);
+            background: transparent;
+        }
+
+        .navbar.scrolled {
+            background: rgba(10, 10, 11, 0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+            padding: 12px 0;
+        }
+
+        .navbar .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 4px;
+            color: var(--text-primary);
+            text-decoration: none;
+            position: relative;
+        }
+
+        .logo span {
+            color: var(--accent-light);
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 36px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.3s;
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: var(--text-primary);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent-light);
+            transition: width 0.3s var(--transition);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-cta {
+            background: var(--accent);
+            color: white !important;
+            padding: 10px 24px;
+            border-radius: 100px;
+            font-weight: 600;
+            font-size: 14px;
+            transition: all 0.3s var(--transition) !important;
+            border: 1px solid transparent;
+        }
+
+        .nav-cta:hover {
+            background: var(--accent-light);
+            transform: translateY(-1px);
+            box-shadow: 0 8px 30px rgba(109, 40, 217, 0.4);
+        }
+
+        .nav-cta::after { display: none !important; }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--text-primary);
+            cursor: pointer;
+            padding: 8px;
+        }
+
+        /* ═══════════════ HERO ═══════════════ */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            padding-top: 80px;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(circle, rgba(109, 40, 217, 0.12) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 200px;
+            background: linear-gradient(to top, var(--bg-primary), transparent);
+            pointer-events: none;
+        }
+
+        .hero-grid {
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(109, 40, 217, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(109, 40, 217, 0.03) 1px, transparent 1px);
+            background-size: 60px 60px;
+            mask-image: radial-gradient(ellipse at center, black 30%, transparent 70%);
+            -webkit-mask-image: radial-gradient(ellipse at center, black 30%, transparent 70%);
+        }
+
+        .hero .container {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 20px;
+            background: var(--accent-glow);
+            border: 1px solid rgba(139, 92, 246, 0.2);
+            border-radius: 100px;
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--accent-light);
+            margin-bottom: 32px;
+            animation: pulse-glow 3s ease-in-out infinite;
+        }
+
+        .hero-badge .dot {
+            width: 6px;
+            height: 6px;
+            background: var(--success);
+            border-radius: 50%;
+            animation: float 2s ease-in-out infinite;
+        }
+
+        .hero h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(40px, 7vw, 80px);
+            font-weight: 800;
+            line-height: 1.05;
+            letter-spacing: -3px;
+            margin-bottom: 28px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero p {
+            font-size: clamp(16px, 2vw, 20px);
+            color: var(--text-secondary);
+            max-width: 620px;
+            margin: 0 auto 48px;
+            line-height: 1.7;
+        }
+
+        .hero-cta-group {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 18px 40px;
+            background: var(--accent);
+            color: white;
+            border: none;
+            border-radius: 100px;
+            font-size: 16px;
+            font-weight: 600;
+            font-family: inherit;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.4s var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, transparent 0%, rgba(255,255,255,0.1) 50%, transparent 100%);
+            opacity: 0;
+            transition: opacity 0.4s;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 16px 48px rgba(109, 40, 217, 0.45);
+        }
+
+        .btn-primary:hover::before {
+            opacity: 1;
+        }
+
+        .btn-secondary {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 18px 40px;
+            background: transparent;
+            color: var(--text-primary);
+            border: 1px solid var(--border-light);
+            border-radius: 100px;
+            font-size: 16px;
+            font-weight: 500;
+            font-family: inherit;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s var(--transition);
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--accent-light);
+            color: var(--accent-light);
+            background: var(--accent-glow);
+        }
+
+        .hero-metrics {
+            display: flex;
+            justify-content: center;
+            gap: 64px;
+            margin-top: 80px;
+            padding-top: 48px;
+            border-top: 1px solid var(--border);
+        }
+
+        .hero-metric {
+            text-align: center;
+        }
+
+        .hero-metric strong {
+            display: block;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--text-primary);
+            letter-spacing: -1px;
+        }
+
+        .hero-metric span {
+            font-size: 14px;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        /* ═══════════════ PROBLEM ═══════════════ */
+        .problem {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .problem-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            margin-top: 56px;
+        }
+
+        .problem-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 36px;
+            transition: all 0.4s var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .problem-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #ef4444, #f97316);
+            opacity: 0;
+            transition: opacity 0.4s;
+        }
+
+        .problem-card:hover {
+            border-color: var(--border-light);
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .problem-card:hover::before {
+            opacity: 1;
+        }
+
+        .problem-icon {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(239, 68, 68, 0.1);
+            border-radius: 12px;
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+
+        .problem-card h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            letter-spacing: -0.5px;
+        }
+
+        .problem-card p {
+            font-size: 15px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        /* ═══════════════ SOLUTION ═══════════════ */
+        .solution-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+            margin-top: 56px;
+        }
+
+        .solution-features {
+            display: flex;
+            flex-direction: column;
+            gap: 28px;
+        }
+
+        .solution-feature {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+
+        .solution-feature-icon {
+            width: 44px;
+            height: 44px;
+            min-width: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--accent-glow);
+            border: 1px solid rgba(139, 92, 246, 0.15);
+            border-radius: 12px;
+            font-size: 20px;
+        }
+
+        .solution-feature h4 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 17px;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .solution-feature p {
+            font-size: 15px;
+            color: var(--text-secondary);
+        }
+
+        .solution-visual {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 48px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .solution-visual::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
+        }
+
+        .visual-mockup {
+            position: relative;
+            z-index: 1;
+        }
+
+        .visual-line {
+            height: 12px;
+            background: var(--border);
+            border-radius: 6px;
+            margin-bottom: 16px;
+        }
+
+        .visual-line:nth-child(1) { width: 80%; background: var(--accent-glow); border: 1px solid rgba(139,92,246,0.2); }
+        .visual-line:nth-child(2) { width: 60%; }
+        .visual-line:nth-child(3) { width: 90%; }
+        .visual-line:nth-child(4) { width: 45%; }
+
+        .visual-blocks {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-top: 28px;
+        }
+
+        .visual-block {
+            height: 80px;
+            background: var(--bg-card-hover);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+        }
+
+        /* ═══════════════ PROCESS ═══════════════ */
+        .process {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .process-header {
+            text-align: center;
+            margin-bottom: 72px;
+        }
+
+        .process-header .section-subtitle {
+            margin: 0 auto;
+        }
+
+        .process-timeline {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .process-timeline::before {
+            content: '';
+            position: absolute;
+            left: 32px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(to bottom, var(--accent), var(--accent-light), var(--accent));
+        }
+
+        .process-step {
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+            padding: 32px 0;
+            position: relative;
+        }
+
+        .step-number {
+            width: 64px;
+            height: 64px;
+            min-width: 64px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--bg-primary);
+            border: 2px solid var(--accent);
+            border-radius: 50%;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--accent-light);
+            position: relative;
+            z-index: 2;
+            transition: all 0.4s var(--transition);
+        }
+
+        .process-step:hover .step-number {
+            background: var(--accent);
+            color: white;
+            box-shadow: 0 0 30px rgba(109, 40, 217, 0.4);
+        }
+
+        .step-content {
+            flex: 1;
+            padding-top: 12px;
+        }
+
+        .step-content h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+
+        .step-content p {
+            font-size: 16px;
+            color: var(--text-secondary);
+            max-width: 500px;
+        }
+
+        .step-tag {
+            display: inline-block;
+            padding: 4px 14px;
+            background: var(--accent-glow);
+            border: 1px solid rgba(139, 92, 246, 0.15);
+            border-radius: 100px;
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--accent-light);
+            margin-top: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* ═══════════════ SOCIAL PROOF ═══════════════ */
+        .proof-header {
+            text-align: center;
+            margin-bottom: 64px;
+        }
+
+        .proof-header .section-subtitle {
+            margin: 0 auto;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 24px;
+        }
+
+        .testimonial-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 36px;
+            transition: all 0.4s var(--transition);
+            position: relative;
+        }
+
+        .testimonial-card::before {
+            content: '\201C';
+            position: absolute;
+            top: 20px;
+            right: 28px;
+            font-size: 64px;
+            font-family: Georgia, serif;
+            color: var(--accent-glow);
+            line-height: 1;
+        }
+
+        .testimonial-card:hover {
+            border-color: var(--border-light);
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .testimonial-stars {
+            display: flex;
+            gap: 4px;
+            margin-bottom: 20px;
+        }
+
+        .testimonial-stars span {
+            color: #fbbf24;
+            font-size: 16px;
+        }
+
+        .testimonial-text {
+            font-size: 16px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: 24px;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .testimonial-avatar {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: var(--accent-gradient);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 16px;
+            color: white;
+        }
+
+        .testimonial-name {
+            font-weight: 600;
+            font-size: 15px;
+        }
+
+        .testimonial-role {
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        /* ═══════════════ FAQ ═══════════════ */
+        .faq {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .faq-header {
+            text-align: center;
+            margin-bottom: 64px;
+        }
+
+        .faq-list {
+            max-width: 760px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .faq-item {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            overflow: hidden;
+            transition: border-color 0.3s;
+        }
+
+        .faq-item.active {
+            border-color: var(--accent);
+        }
+
+        .faq-question {
+            width: 100%;
+            padding: 22px 28px;
+            background: none;
+            border: none;
+            color: var(--text-primary);
+            font-family: inherit;
+            font-size: 16px;
+            font-weight: 600;
+            text-align: left;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: color 0.3s;
+        }
+
+        .faq-question:hover {
+            color: var(--accent-light);
+        }
+
+        .faq-icon {
+            font-size: 20px;
+            transition: transform 0.4s var(--transition);
+            color: var(--text-muted);
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(45deg);
+            color: var(--accent-light);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s var(--transition), padding 0.5s var(--transition);
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 300px;
+            padding: 0 28px 22px;
+        }
+
+        .faq-answer p {
+            font-size: 15px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        /* ═══════════════ FINAL CTA ═══════════════ */
+        .final-cta {
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .final-cta::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(109, 40, 217, 0.08) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .final-cta .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .final-cta h2 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(36px, 5vw, 56px);
+            font-weight: 800;
+            line-height: 1.1;
+            letter-spacing: -2px;
+            margin-bottom: 24px;
+        }
+
+        .final-cta p {
+            font-size: 18px;
+            color: var(--text-secondary);
+            max-width: 560px;
+            margin: 0 auto 40px;
+        }
+
+        .guarantee-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 24px;
+            background: rgba(34, 197, 94, 0.08);
+            border: 1px solid rgba(34, 197, 94, 0.2);
+            border-radius: 100px;
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--success);
+            margin-top: 32px;
+        }
+
+        /* ═══════════════ FOOTER ═══════════════ */
+        .footer {
+            padding: 64px 0 32px;
+            border-top: 1px solid var(--border);
+        }
+
+        .footer-grid {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 48px;
+            margin-bottom: 48px;
+        }
+
+        .footer-brand {
+            max-width: 320px;
+        }
+
+        .footer-brand .logo {
+            display: inline-block;
+            margin-bottom: 16px;
+        }
+
+        .footer-brand p {
+            font-size: 14px;
+            color: var(--text-muted);
+            line-height: 1.7;
+        }
+
+        .footer-links h4 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+
+        .footer-links ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .footer-links a {
+            font-size: 14px;
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent-light);
+        }
+
+        .footer-bottom {
+            padding-top: 32px;
+            border-top: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-bottom p {
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        .footer-socials {
+            display: flex;
+            gap: 16px;
+        }
+
+        .footer-socials a {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            color: var(--text-muted);
+            font-size: 18px;
+            text-decoration: none;
+            transition: all 0.3s var(--transition);
+        }
+
+        .footer-socials a:hover {
+            border-color: var(--accent);
+            color: var(--accent-light);
+            background: var(--accent-glow);
+            transform: translateY(-2px);
+        }
+
+        /* ═══════════════ RESPONSIVE ═══════════════ */
+
+        /* ── Tablette paysage & petit desktop (1024px) ── */
+        @media (max-width: 1024px) {
+            .container { padding: 0 32px; }
+            .section { padding: 100px 0; }
+            .hero-metrics { gap: 40px; }
+            .solution-grid { gap: 48px; }
+            .nav-links { gap: 24px; }
+        }
+
+        /* ── Tablette portrait (768px - 1024px) ── */
+        @media (max-width: 900px) {
+            .nav-links { display: none; }
+            .mobile-menu-btn { display: flex; }
+            .mobile-menu-btn svg { width: 24px; height: 24px; }
+
+            .section { padding: 80px 0; }
+
+            .hero { min-height: auto; padding: 120px 0 80px; }
+            .hero h1 { letter-spacing: -2px; font-size: clamp(36px, 6vw, 64px); }
+            .hero p { font-size: 17px; margin-bottom: 36px; }
+            .hero-metrics { gap: 32px; margin-top: 56px; }
+
+            .solution-grid { grid-template-columns: 1fr; gap: 48px; }
+            .solution-visual { order: -1; }
+            .solution-visual { max-width: 500px; margin: 0 auto; }
+
+            .testimonials-grid { grid-template-columns: 1fr 1fr; }
+
+            .footer-grid { flex-wrap: wrap; gap: 40px; }
+        }
+
+        /* ── Mobile large (480px - 768px) ── */
+        @media (max-width: 768px) {
+            .container { padding: 0 20px; }
+            .section { padding: 72px 0; }
+
+            .section-title { font-size: clamp(28px, 5vw, 40px); letter-spacing: -1px; }
+            .section-subtitle { font-size: 16px; }
+            .section-label { font-size: 12px; letter-spacing: 2px; }
+
+            .hero { padding: 100px 0 64px; }
+            .hero h1 { font-size: clamp(32px, 7vw, 48px); letter-spacing: -1.5px; }
+            .hero p { font-size: 16px; margin-bottom: 32px; max-width: 100%; }
+            .hero-badge { font-size: 12px; padding: 6px 16px; }
+            .hero-cta-group { flex-direction: column; width: 100%; }
+            .hero-cta-group .btn-primary,
+            .hero-cta-group .btn-secondary { width: 100%; justify-content: center; padding: 16px 32px; font-size: 15px; }
+            .hero-metrics { flex-direction: row; gap: 0; justify-content: space-around; margin-top: 48px; padding-top: 36px; }
+            .hero-metric strong { font-size: 28px; }
+            .hero-metric span { font-size: 12px; }
+
+            .problem-grid { grid-template-columns: 1fr; gap: 16px; }
+            .problem-card { padding: 28px; }
+            .problem-card h3 { font-size: 18px; }
+            .problem-card p { font-size: 14px; }
+
+            .solution-feature-icon { width: 40px; height: 40px; min-width: 40px; font-size: 18px; }
+            .solution-feature h4 { font-size: 16px; }
+            .solution-feature p { font-size: 14px; }
+            .solution-visual { padding: 32px; }
+
+            .process-timeline::before { left: 20px; }
+            .step-number { width: 40px; height: 40px; min-width: 40px; font-size: 16px; }
+            .process-step { gap: 20px; padding: 24px 0; }
+            .step-content h3 { font-size: 18px; }
+            .step-content p { font-size: 14px; }
+            .process-header { margin-bottom: 48px; }
+
+            .testimonials-grid { grid-template-columns: 1fr; gap: 16px; }
+            .testimonial-card { padding: 28px; }
+            .testimonial-text { font-size: 15px; }
+
+            .faq-question { font-size: 15px; padding: 18px 20px; }
+            .faq-answer p { font-size: 14px; }
+            .faq-item.active .faq-answer { padding: 0 20px 18px; }
+
+            .final-cta h2 { font-size: clamp(28px, 5vw, 44px); letter-spacing: -1px; }
+            .final-cta p { font-size: 16px; }
+            .final-cta .btn-primary { font-size: 16px !important; padding: 18px 36px !important; width: 100%; justify-content: center; }
+            .guarantee-badge { font-size: 13px; padding: 10px 18px; }
+
+            .footer-grid { flex-direction: column; gap: 32px; }
+            .footer-brand { max-width: 100%; }
+            .footer-bottom { flex-direction: column; gap: 16px; text-align: center; }
+            .footer-socials { justify-content: center; }
+        }
+
+        /* ── Mobile petit (< 480px) ── */
+        @media (max-width: 480px) {
+            .container { padding: 0 16px; }
+            .section { padding: 56px 0; }
+
+            .hero { padding: 88px 0 48px; }
+            .hero h1 { font-size: 32px; letter-spacing: -1px; line-height: 1.1; }
+            .hero h1 br { display: none; }
+            .hero p { font-size: 15px; line-height: 1.6; }
+            .hero-badge { font-size: 11px; padding: 5px 12px; margin-bottom: 24px; }
+            .hero-metrics { flex-direction: column; gap: 20px; margin-top: 40px; padding-top: 28px; }
+            .hero-cta-group .btn-primary,
+            .hero-cta-group .btn-secondary { padding: 14px 24px; font-size: 14px; }
+
+            .section-title { font-size: 26px; letter-spacing: -0.5px; }
+            .section-title br { display: none; }
+            .section-subtitle { font-size: 15px; }
+            .section-label { font-size: 11px; }
+
+            .problem-card { padding: 24px; }
+            .problem-icon { width: 40px; height: 40px; font-size: 18px; }
+
+            .solution-visual { padding: 24px; }
+            .visual-block { height: 64px; font-size: 22px; }
+            .solution-feature { gap: 14px; }
+
+            .step-number { width: 36px; height: 36px; min-width: 36px; font-size: 14px; }
+            .process-step { gap: 16px; padding: 20px 0; }
+            .process-timeline::before { left: 18px; }
+            .step-tag { font-size: 11px; padding: 3px 10px; }
+
+            .testimonial-card { padding: 24px; }
+            .testimonial-card::before { font-size: 48px; top: 12px; right: 16px; }
+
+            .faq-question { font-size: 14px; padding: 16px; }
+            .faq-item.active .faq-answer { padding: 0 16px 16px; }
+            .faq-answer p { font-size: 13px; }
+
+            .final-cta h2 { font-size: 26px; }
+            .final-cta p { font-size: 15px; }
+            .guarantee-badge { font-size: 12px; padding: 8px 14px; flex-direction: column; text-align: center; }
+
+            .footer { padding: 40px 0 24px; }
+            .footer-grid { gap: 24px; margin-bottom: 32px; }
+            .logo { font-size: 20px; letter-spacing: 3px; }
+        }
+
+        /* ── Touch target minimum 44px (accessibilité mobile) ── */
+        @media (pointer: coarse) {
+            .btn-primary, .btn-secondary, .nav-cta, .faq-question {
+                min-height: 44px;
+            }
+            .footer-socials a {
+                width: 44px;
+                height: 44px;
+            }
+        }
+
+        /* ── Préférence mouvement réduit (accessibilité) ── */
+        @media (prefers-reduced-motion: reduce) {
+            .reveal { opacity: 1; transform: none; transition: none; }
+            .hero-badge { animation: none; }
+            .hero-badge .dot { animation: none; }
+            html { scroll-behavior: auto; }
+        }
+
+        /* ── Mode sombre natif renforcé ── */
+        @media (prefers-color-scheme: light) {
+            /* Le site est déjà sombre par design, on garde le même look */
+        }
+
+        /* ── Ecrans très larges (>1400px) ── */
+        @media (min-width: 1400px) {
+            :root { --max-width: 1280px; }
+            .hero h1 { font-size: 84px; }
+            .section { padding: 140px 0; }
+        }
+
+        /* ── Menu mobile overlay ── */
+        @media (max-width: 900px) {
+            .nav-links.show {
+                display: flex;
+                flex-direction: column;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(10, 10, 11, 0.97);
+                backdrop-filter: blur(20px);
+                -webkit-backdrop-filter: blur(20px);
+                z-index: 999;
+                justify-content: center;
+                align-items: center;
+                gap: 32px;
+                padding: 80px 24px;
+            }
+            .nav-links.show a {
+                font-size: 20px;
+                color: var(--text-primary);
+            }
+            .nav-links.show .nav-cta {
+                padding: 14px 36px;
+                font-size: 18px;
+            }
+            .mobile-menu-btn {
+                position: relative;
+                z-index: 1001;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ═══════════════ SKIP TO CONTENT (Accessibilité) ═══════════════ -->
+    <a href="#hero" class="sr-only" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Aller au contenu principal</a>
+
+    <!-- ═══════════════ NAVBAR ═══════════════ -->
+    <header>
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Navigation principale">
+        <div class="container">
+            <a href="#" class="logo" aria-label="CRAFT — Retour à l'accueil">CR<span>A</span>FT</a>
+            <ul class="nav-links">
+                <li><a href="#probleme">Le problème</a></li>
+                <li><a href="#solution">La solution</a></li>
+                <li><a href="#processus">Processus</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="https://tally.so/r/Bz8Kl1" target="_blank" class="nav-cta">Audit gratuit</a></li>
+            </ul>
+            <button class="mobile-menu-btn" onclick="document.querySelector('.nav-links').classList.toggle('show')" aria-label="Ouvrir le menu" aria-expanded="false">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+            </button>
+        </div>
+    </nav>
+    </header>
+
+    <main>
+    <!-- ═══════════════ HERO ═══════════════ -->
+    <section class="hero" id="hero">
+        <div class="hero-grid"></div>
+        <div class="container">
+            <div class="hero-badge reveal">
+                <span class="dot"></span>
+                Audit découverte gratuit — Places limitées
+            </div>
+            <h1 class="reveal reveal-delay-1">
+                Votre activité mérite<br><span class="gradient-text">son propre outil.</span>
+            </h1>
+            <p class="reveal reveal-delay-2">
+                Vous gérez votre entreprise avec des tableurs, des outils inadaptés et du bricolage numérique ? CRAFT conçoit des outils sur-mesure propulsés par l'IA, taillés pour votre façon de travailler.
+            </p>
+            <div class="hero-cta-group reveal reveal-delay-3">
+                <a href="https://tally.so/r/Bz8Kl1" target="_blank" class="btn-primary">
+                    Réservez votre audit gratuit
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#processus" class="btn-secondary">
+                    Découvrir le processus
+                </a>
+            </div>
+            <div class="hero-metrics reveal reveal-delay-4">
+                <div class="hero-metric">
+                    <strong>100%</strong>
+                    <span>Sur-mesure</span>
+                </div>
+                <div class="hero-metric">
+                    <strong>IA</strong>
+                    <span>Propulsé par l'IA</span>
+                </div>
+                <div class="hero-metric">
+                    <strong>24h</strong>
+                    <span>Réponse garantie</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ PROBLEM ═══════════════ -->
+    <section class="section problem" id="probleme">
+        <div class="container">
+            <div class="section-label reveal">Le problème</div>
+            <h2 class="section-title reveal reveal-delay-1">Votre métier est unique.<br>Vos outils ne le sont pas.</h2>
+            <p class="section-subtitle reveal reveal-delay-2">La plupart des logiciels sont conçus pour des métiers standardisés. Quand votre activité sort du cadre, vous finissez par tout bricoler.</p>
+            <div class="problem-grid">
+                <div class="problem-card reveal reveal-delay-1">
+                    <div class="problem-icon">🧩</div>
+                    <h3>Outils fragmentés</h3>
+                    <p>Vous jonglez entre 5, 10, parfois 15 outils différents qui ne se parlent pas. Chaque transfert de données est une source d'erreur.</p>
+                </div>
+                <div class="problem-card reveal reveal-delay-2">
+                    <div class="problem-icon">⏰</div>
+                    <h3>Temps gaspillé</h3>
+                    <p>Des heures chaque semaine à faire des copier-coller, des exports, des saisies manuelles. Ce temps devrait être consacré à votre cœur de métier.</p>
+                </div>
+                <div class="problem-card reveal reveal-delay-3">
+                    <div class="problem-icon">📊</div>
+                    <h3>Données invisibles</h3>
+                    <p>Vos données existent mais elles sont dispersées. Impossible d'avoir une vue claire de votre activité pour prendre les bonnes décisions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ SOLUTION ═══════════════ -->
+    <section class="section" id="solution">
+        <div class="container">
+            <div class="solution-grid">
+                <div>
+                    <div class="section-label reveal">La solution</div>
+                    <h2 class="section-title reveal reveal-delay-1">Un outil conçu<br><span class="gradient-text">pour vous.</span></h2>
+                    <p class="section-subtitle reveal reveal-delay-2" style="margin-bottom: 40px;">CRAFT analyse vos processus métier et conçoit un outil sur-mesure qui automatise, centralise et optimise votre quotidien grâce à l'IA.</p>
+                    <div class="solution-features">
+                        <div class="solution-feature reveal reveal-delay-1">
+                            <div class="solution-feature-icon">⚡</div>
+                            <div>
+                                <h4>Automatisation intelligente</h4>
+                                <p>L'IA prend en charge les tâches répétitives. Vous vous concentrez sur ce qui compte vraiment.</p>
+                            </div>
+                        </div>
+                        <div class="solution-feature reveal reveal-delay-2">
+                            <div class="solution-feature-icon">🎯</div>
+                            <div>
+                                <h4>Adapté à votre métier</h4>
+                                <p>Pas un logiciel générique. Un outil pensé et construit autour de VOTRE façon de travailler.</p>
+                            </div>
+                        </div>
+                        <div class="solution-feature reveal reveal-delay-3">
+                            <div class="solution-feature-icon">📈</div>
+                            <div>
+                                <h4>Évolutif et accompagné</h4>
+                                <p>Votre outil grandit avec vous. Support continu et optimisations incluses.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="solution-visual reveal">
+                    <div class="visual-mockup">
+                        <div class="visual-line"></div>
+                        <div class="visual-line"></div>
+                        <div class="visual-line"></div>
+                        <div class="visual-line"></div>
+                        <div class="visual-blocks">
+                            <div class="visual-block">⚡</div>
+                            <div class="visual-block">📊</div>
+                            <div class="visual-block">🤖</div>
+                            <div class="visual-block">🎯</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ PROCESS ═══════════════ -->
+    <section class="section process" id="processus">
+        <div class="container">
+            <div class="process-header">
+                <div class="section-label reveal">Le processus</div>
+                <h2 class="section-title reveal reveal-delay-1">De l'idée à l'outil.<br><span class="gradient-text">En 5 étapes.</span></h2>
+                <p class="section-subtitle reveal reveal-delay-2">Un processus clair, transparent et sans surprise. Vous savez exactement où vous en êtes à chaque instant.</p>
+            </div>
+            <div class="process-timeline">
+                <div class="process-step reveal">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Audit découverte gratuit</h3>
+                        <p>Un échange de 30 minutes pour comprendre votre activité, vos irritants et vos objectifs. Sans engagement.</p>
+                        <span class="step-tag">Gratuit</span>
+                    </div>
+                </div>
+                <div class="process-step reveal reveal-delay-1">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Analyse de vos processus</h3>
+                        <p>Nous cartographions vos flux de travail actuels pour identifier les gains d'efficacité les plus impactants.</p>
+                        <span class="step-tag">Diagnostic</span>
+                    </div>
+                </div>
+                <div class="process-step reveal reveal-delay-2">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Conception sur-mesure</h3>
+                        <p>Nous concevons votre outil propulsé par l'IA, parfaitement adapté à votre métier et vos contraintes.</p>
+                        <span class="step-tag">Conception</span>
+                    </div>
+                </div>
+                <div class="process-step reveal reveal-delay-3">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>Livraison clé en main</h3>
+                        <p>Votre outil est livré prêt à l'emploi avec une formation complète pour votre équipe. Aucune compétence technique requise.</p>
+                        <span class="step-tag">Livraison</span>
+                    </div>
+                </div>
+                <div class="process-step reveal reveal-delay-4">
+                    <div class="step-number">05</div>
+                    <div class="step-content">
+                        <h3>Support & optimisation</h3>
+                        <p>Nous restons à vos côtés. Support réactif, mises à jour et optimisations continues pour garantir vos résultats.</p>
+                        <span class="step-tag">Continu</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ ENGAGEMENTS ═══════════════ -->
+    <section class="section" id="engagements">
+        <div class="container">
+            <div class="proof-header">
+                <div class="section-label reveal">Nos engagements</div>
+                <h2 class="section-title reveal reveal-delay-1">Pourquoi choisir<br><span class="gradient-text">CRAFT ?</span></h2>
+                <p class="section-subtitle reveal reveal-delay-2">Des garanties concrètes pour vous accompagner en toute confiance.</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card reveal reveal-delay-1">
+                    <div class="testimonial-stars">
+                        <span style="color: var(--accent-light); font-size: 28px;">🔒</span>
+                    </div>
+                    <p class="testimonial-text" style="font-style: normal;">Audit découverte 100% gratuit et sans engagement. Vous repartez avec une analyse claire de vos besoins, que vous choisissiez de travailler avec nous ou non.</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar" style="background: linear-gradient(135deg, #22c55e, #16a34a);">✓</div>
+                        <div>
+                            <div class="testimonial-name">Zéro risque</div>
+                            <div class="testimonial-role">Audit gratuit & sans engagement</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal reveal-delay-2">
+                    <div class="testimonial-stars">
+                        <span style="color: var(--accent-light); font-size: 28px;">⚡</span>
+                    </div>
+                    <p class="testimonial-text" style="font-style: normal;">Chaque outil est conçu sur-mesure pour votre métier. Pas de template générique, pas de compromis. Votre façon de travailler dicte la conception.</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">100</div>
+                        <div>
+                            <div class="testimonial-name">100% sur-mesure</div>
+                            <div class="testimonial-role">Adapté à votre métier unique</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal reveal-delay-3">
+                    <div class="testimonial-stars">
+                        <span style="color: var(--accent-light); font-size: 28px;">🤝</span>
+                    </div>
+                    <p class="testimonial-text" style="font-style: normal;">Un interlocuteur unique du premier échange à la livraison et au-delà. Support réactif sous 24h, mises à jour continues, et accompagnement dans la durée.</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar" style="background: linear-gradient(135deg, #6d28d9, #a855f7);">∞</div>
+                        <div>
+                            <div class="testimonial-name">Accompagnement continu</div>
+                            <div class="testimonial-role">Support & évolution garantis</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ FAQ ═══════════════ -->
+    <section class="section faq" id="faq">
+        <div class="container">
+            <div class="faq-header">
+                <div class="section-label reveal">FAQ</div>
+                <h2 class="section-title reveal reveal-delay-1">Vos questions.<br><span class="gradient-text">Nos réponses.</span></h2>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item reveal">
+                    <button class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                        Qu'est-ce qu'un outil sur-mesure propulsé par l'IA ?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>C'est un logiciel conçu spécifiquement pour votre activité, qui intègre de l'intelligence artificielle pour automatiser vos tâches répétitives, analyser vos données et vous faire gagner du temps. Contrairement aux logiciels génériques, il est parfaitement adapté à vos processus.</p>
+                    </div>
+                </div>
+                <div class="faq-item reveal reveal-delay-1">
+                    <button class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                        Combien coûte un projet CRAFT ?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Chaque projet est unique, donc le prix dépend de la complexité et de l'étendue de votre besoin. L'audit découverte est gratuit et sans engagement — il nous permet de vous proposer un devis sur-mesure après avoir compris votre situation.</p>
+                    </div>
+                </div>
+                <div class="faq-item reveal reveal-delay-2">
+                    <button class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                        Combien de temps faut-il pour avoir mon outil ?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>En général, entre 2 et 8 semaines selon la complexité du projet. Vous avez une visibilité totale sur l'avancement à chaque étape et vous validez chaque jalon avant de passer au suivant.</p>
+                    </div>
+                </div>
+                <div class="faq-item reveal reveal-delay-3">
+                    <button class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                        Ai-je besoin de compétences techniques ?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolument pas. Votre outil est livré clé en main avec une formation complète. Il est conçu pour être aussi simple à utiliser qu'une application mobile. Et notre support est là si vous avez la moindre question.</p>
+                    </div>
+                </div>
+                <div class="faq-item reveal reveal-delay-4">
+                    <button class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                        Que se passe-t-il après la livraison ?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Nous ne disparaissons pas après la livraison. Vous bénéficiez d'un support continu, de mises à jour régulières et d'optimisations en fonction de l'évolution de votre activité. Votre outil grandit avec vous.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ FINAL CTA ═══════════════ -->
+    <section class="section final-cta">
+        <div class="container">
+            <div class="section-label reveal">Prêt à commencer ?</div>
+            <h2 class="reveal reveal-delay-1">Arrêtez de bricoler.<br><span class="gradient-text">Passez au sur-mesure.</span></h2>
+            <p class="reveal reveal-delay-2">Réservez votre audit découverte gratuit de 30 minutes. On analyse ensemble vos besoins et on vous montre ce qu'un outil sur-mesure peut changer pour votre activité.</p>
+            <a href="https://tally.so/r/Bz8Kl1" target="_blank" class="btn-primary reveal reveal-delay-3" style="font-size: 18px; padding: 22px 52px;">
+                Réservez votre audit gratuit
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <div class="guarantee-badge reveal reveal-delay-4">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+                100% gratuit — Sans engagement — Réponse sous 24h
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <!-- ═══════════════ FOOTER ═══════════════ -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">CR<span>A</span>FT</a>
+                    <p>Outils sur-mesure propulsés par l'IA pour les dirigeants dont l'activité ne rentre dans aucun logiciel existant.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#probleme">Le problème</a></li>
+                        <li><a href="#solution">La solution</a></li>
+                        <li><a href="#processus">Processus</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:cyrilleneninbi@gmail.com">cyrilleneninbi@gmail.com</a></li>
+                        <li><a href="https://www.linkedin.com/in/cyrille-nenin-safe%C2%AE-popm-3370891a1" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://tally.so/r/Bz8Kl1" target="_blank">Audit gratuit</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 CRAFT. Tous droits réservés.</p>
+                <div class="footer-socials">
+                    <a href="https://www.linkedin.com/in/cyrille-nenin-safe%C2%AE-popm-3370891a1" target="_blank" title="LinkedIn">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    </a>
+                    <a href="mailto:cyrilleneninbi@gmail.com" title="Email">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ═══════════════ SCRIPTS ═══════════════ -->
+    <script>
+        // Navbar scroll effect (throttled for performance)
+        const navbar = document.getElementById('navbar');
+        let ticking = false;
+        window.addEventListener('scroll', () => {
+            if (!ticking) {
+                window.requestAnimationFrame(() => {
+                    navbar.classList.toggle('scrolled', window.scrollY > 50);
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        }, { passive: true });
+
+        // Mobile menu toggle with accessibility
+        const menuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        menuBtn.addEventListener('click', () => {
+            const isOpen = navLinks.classList.toggle('show');
+            menuBtn.setAttribute('aria-expanded', isOpen);
+            menuBtn.setAttribute('aria-label', isOpen ? 'Fermer le menu' : 'Ouvrir le menu');
+            document.body.style.overflow = isOpen ? 'hidden' : '';
+        });
+        // Close mobile menu on link click
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('show');
+                menuBtn.setAttribute('aria-expanded', 'false');
+                document.body.style.overflow = '';
+            });
+        });
+        // Close mobile menu on Escape
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && navLinks.classList.contains('show')) {
+                navLinks.classList.remove('show');
+                menuBtn.setAttribute('aria-expanded', 'false');
+                document.body.style.overflow = '';
+                menuBtn.focus();
+            }
+        });
+
+        // Reveal on scroll (IntersectionObserver)
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target); // Stop observing once revealed
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Counter animation for metrics
+        function animateCounters() {
+            document.querySelectorAll('.hero-metric strong').forEach(el => {
+                const text = el.textContent;
+                if (text.includes('%')) {
+                    const target = parseInt(text);
+                    let current = 0;
+                    const increment = target / 40;
+                    const timer = setInterval(() => {
+                        current += increment;
+                        if (current >= target) {
+                            el.textContent = target + '%';
+                            clearInterval(timer);
+                        } else {
+                            el.textContent = Math.floor(current) + '%';
+                        }
+                    }, 30);
+                }
+            });
+        }
+
+        // Trigger counter animation when hero is visible
+        const heroObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    setTimeout(animateCounters, 600);
+                    heroObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        heroObserver.observe(document.querySelector('.hero'));
+
+        // Performance: defer non-critical CSS/JS
+        if ('serviceWorker' in navigator) {
+            // Future-ready for PWA
+        }
+    </script>
+
+</body>
+</html>
